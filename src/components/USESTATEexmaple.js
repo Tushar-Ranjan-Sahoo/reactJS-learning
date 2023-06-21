@@ -22,6 +22,13 @@ const USESTATEexmaple = () => {
   const clearArray = () =>{
     setmyArray([]);
   }
+  const removeElm = (id) =>{
+    const newArray = myArray.filter((curElm) =>{
+      return curElm.id !== id;
+
+    })
+    setmyArray(newArray);
+  }
   // const [count, setCount] = useState(0);
   // useEffect(()=>{
   //   document.titel =`you clicked ${count} times`;
@@ -63,9 +70,9 @@ const USESTATEexmaple = () => {
     // </div>
     <div>
       {
-        myArray.map((curElm) =><h1 key={curElm.id}>name: {curElm.myName}& Age: {curElm.age}</h1>)
+        myArray.map((curElm) =><h1 key={curElm.id}>name: {curElm.myName}& Age: {curElm.age} <button onClick={ () =>removeElm(curElm.id)}> Remove</button></h1>)
       }
-      <button onClick={clearArray}></button>
+      <button onClick={clearArray}>clear all</button>
     </div>
   )
 }
