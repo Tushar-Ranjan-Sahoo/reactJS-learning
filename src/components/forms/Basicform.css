@@ -1,0 +1,36 @@
+.Basicform {
+    display: flex;
+    flex-direction: column;
+    
+    width: 500px;
+    height:200px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 10px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Basicform label {
+    margin-bottom: 8px;
+  }
+  
+  .Basicform input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .Basicform button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Basicform button:hover {
+    background-color: #45a049;
+  }
+  
