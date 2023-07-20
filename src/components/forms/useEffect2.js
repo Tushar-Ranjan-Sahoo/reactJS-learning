@@ -9,7 +9,12 @@ const UseEffect2 = () => {
     }
     useEffect(()=>{
         window.addEventListener("resize",actualWidth);
+
+        return () =>{
+            window.removeEventListener("resize",actualWidth);
+        }
     });
+    
   
     return (
     <div>
