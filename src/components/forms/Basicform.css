@@ -1,7 +1,7 @@
 .Basicform {
     display: flex;
     flex-direction: column;
-    
+    content:center;
     width: 500px;
     height:200px;
     margin: 100px auto;
